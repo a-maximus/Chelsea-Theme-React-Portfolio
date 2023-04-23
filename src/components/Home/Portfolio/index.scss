@@ -1,0 +1,28 @@
+.portfolio-page {
+  // left: 70px;
+  // top: 70px;
+  // padding: 4px;
+  padding-left: 100px;
+  padding-right: 50px;
+  width: calc(100% - 150px);
+  position: initial;
+  height: 100%;
+  overflow: auto;
+
+  .portfolio-image {
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+  }
+
+  h1.page-title {
+    margin-left: 100px;
+    margin-top: 100px;
+  }
+
+  h1 {
+    &::after {
+      margin-left: 100px;
+    }
+  }
+}
