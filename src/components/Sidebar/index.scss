@@ -1,0 +1,285 @@
+.nav-bar {
+  background: #181818;
+  background: linear-gradient(
+    1.47turn,
+    // black,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #181818,
+    #101720,
+    // #101113,
+    // #050b13,
+    #0d1c2d,
+    #131f2f,
+    #092a4f,
+    #073468,
+    #034694
+  );
+  width: 65px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 500px;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 45px;
+      height: auto;
+
+      // &.sub-logo {
+      //   width: 45px;
+      // }
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 22px;
+      color: #4d4d4e;
+      display: block;
+      line-height: 51px;
+      height: 51px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        color: #ffd700;
+
+        svg {
+          opacity: 0%;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
+        }
+      }
+    }
+
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.active {
+      svg {
+        color: #dba111;
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+
+    li {
+      padding: 7px 0;
+      display: block;
+      font-size: 15px;
+      line-height: 16px;
+
+      // &:hover svg {
+      //   color: #ffd700;
+      // }
+
+      &:hover svg {
+        color: #ffd700;
+
+        svg {
+          opacity: 0%;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 9px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        transition: all 0.3s ease-out;
+      }
+
+      // a.linkedin {
+      //   &:after {
+      //     content: 'LINKEDIN';
+      //   }
+      // }
+
+      .chelsea-logo {
+        display: block;
+        margin: 8px auto;
+        width: 35px;
+        height: auto;
+        opacity: 75%;
+
+        &:hover {
+          opacity: 100%;
+          // width: 36px;
+          height: auto;
+          // margin: auto;
+        }
+      }
+
+      // .a.chelsea-logo {
+      //   animation: pulse 1s linear infinite;
+      // }
+
+      // @keyframes pulseAnimate {
+      //   0% {
+      //     transform: scale(1.1);
+      //     transform: scale(1.1);
+      //   }
+      //   50% {
+      //     transform: scale(0.8);
+      //     transform: scale(0.8);
+      //   }
+      //   100% {
+      //     transform: scale(1);
+      //     transform: scale(1);
+      //   }
+      // }
+
+      // section {
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      //   min-height: 100vh;
+      //   background: green;
+      // }
+
+      // .pulse {
+      //   position: relative;
+      //   width: 200px;
+      //   height: 200px;
+      //   border-radius: 50%;
+      //   background: white;
+      // }
+
+      // .pulse span {
+      //   position: absolute;
+      //   width: 100%;
+      //   height: 100%;
+      //   background: inherit;
+      //   border-radius: inherit;
+      //   opacity: 0.8;
+      //   animation: pulseAnimate 4s ease-out infinite;
+      // }
+
+      // @keyframes pulseAnimate {
+      //   100% {
+      //     opacity: 0;
+      //     transform: scale(2);
+      //   }
+      // }
+    }
+
+    // div footer {
+    //   position: relative;
+    //   // border: 4px solid green;
+    //   height: 100px;
+    // }
+
+    // footer {
+    //   // text-align: center;
+    //   height: 100px;
+    //   bottom: -20px;
+    //   align-items: center;
+    //   padding: 2px;
+    //   background: linear-gradient(
+    //     1.39turn,
+    //     // black,
+    //     #181818,
+    //     #101113,
+    //     #050b13,
+    //     #101720,
+    //     #0d1c2d,
+    //     #092a4f,
+    //     #073468,
+    //     #034694
+    //   );
+    //   // color: #000;
+    //   position: relative;
+    //   // border: 4px solid yellow;
+    // }
+  }
+
+  // .bottom-footer {
+  //   background-color: green;
+  // }
+}

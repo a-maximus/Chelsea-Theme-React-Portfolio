@@ -1,0 +1,10 @@
+{
+  "portfolio": [
+    {
+      "cover": "public/portfolio/portfolio-1/Ryu.jpeg",
+      "title": "Street Fighter VI",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    }
+  ]
+}
