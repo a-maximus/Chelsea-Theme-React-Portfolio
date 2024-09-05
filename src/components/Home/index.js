@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 import Loader from 'react-loaders';
 
 const Home = () => {
-  //initializing stste for my letterClass
+  //initializing state for my letterClass
   const [letterClass, setLetterClass] = useState('text-animate');
 
   //creating new arrays
@@ -35,22 +35,23 @@ const Home = () => {
   ];
 
   //with a retun callbackfunction
-  // useEffect(() => {
-  //   return () =>
-  //     setTimeout(() => {
-  //       setLetterClass('text-animate-hover');
-  //     }, 4000);
-  // }, []);
-
-  //without a return statement
+  //useEffect hook returns a cleanup function, in this case is the 'setTimeout' callback, which is set to run after 4 seconds.
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover');
-    }, 4000);
+    return () =>
+      setTimeout(() => {
+        setLetterClass('text-animate-hover');
+      }, 4000);
   }, []);
 
+  //without a return statement - not recommended
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setLetterClass('text-animate-hover');
+  //   }, 4000);
+  // }, []);
+
   return (
-    //creating tht text zone where my animated letters will live on Home page
+    //creating the text zone where my animated letters will live on Home page
     <>
       <div className="container home-page">
         <div className="text-zone">
@@ -62,7 +63,7 @@ const Home = () => {
             <span className={`${letterClass} _14`}>m</span>
             <img src={LogoA} alt="developer" />
 
-            {/* substitutung hard coded string to animated letters component created */}
+            {/* substitutung hard coded string to animatedletters component created */}
             <AnimatedLetters
               letterclass={letterClass}
               strArray={nameArray}
@@ -76,7 +77,7 @@ const Home = () => {
             />
           </h1>
 
-          <h2>Frontend Developer / Husband / Father</h2>
+          <h2>Fullstack Developer / Husband / Father</h2>
 
           <Link to="/contact" className="flat-button">
             CONTACT ME
@@ -86,16 +87,6 @@ const Home = () => {
       </div>
 
       <Loader type="pacman" />
-
-      {/* <div id="loader">
-        <div class="ls-particles ls-part-1"></div>
-        <div class="ls-particles ls-part-2"></div>
-        <div class="ls-particles ls-part-3"></div>
-        <div class="ls-particles ls-part-4"></div>
-        <div class="ls-particles ls-part-5"></div>
-        <div class="lightsaber ls-left ls-green"></div>
-        <div class="lightsaber ls-right ls-red"></div>
-      </div> */}
     </>
   );
 };

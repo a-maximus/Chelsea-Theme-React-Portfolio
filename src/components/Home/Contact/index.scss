@@ -91,7 +91,7 @@
     font-size: 13px;
     font-weight: 400;
     background: 0 0;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
@@ -99,18 +99,18 @@
     margin-top: 15px;
     float: right;
     // animation: fadeIn 1s s both;
+    // animation: fadeIn 1s 2s backwards;
     white-space: nowrap;
     border-radius: 5px;
     width: 100px;
-    // animation: fadeIn 4.5s 4.5s backwards;
     animation: fadeInUp 2s 2s;
     animation-fill-mode: forwards;
 
     &:hover {
       cursor: pointer;
       background: #ee242c;
-      color: #d1d3d4;
-      border: 2px solid #d1d3d4;
+      color: #333;
+      border: 2px solid #ee242c;
     }
   }
 

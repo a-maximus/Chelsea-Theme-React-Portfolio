@@ -1,8 +1,57 @@
 {
   "portfolio": [
     {
-      "cover": "public/portfolio/portfolio-1/Ryu.jpeg",
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
       "title": "Street Fighter VI",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Coming Soon",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Coming Soon",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Coming Soon",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Coming Soon",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Street Fighter VI",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Coming Soon",
+      "description": "React, JSX, Sass, etc...",
+      "url": "http://google.com"
+    },
+
+    {
+      "cover": "/portfolio/portfolio-1/Ryu2.jpeg",
+      "title": "Coming Soon",
       "description": "React, JSX, Sass, etc...",
       "url": "http://google.com"
     }

@@ -3,7 +3,7 @@ import AnimatedLetters from '../../AnimatedLetters';
 import { useState, useEffect } from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import SkillsCube from './3dSkillsCube';
-import RotateCube from './3dSkillsCube';
+// import RotateCube from './3dSkillsCube';
 // import {
 //   faReact,
 //   faCss3,
